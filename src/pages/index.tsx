@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 const Home: NextPage = () => {
   return (
     <div>
-      <main>
+      <main className='bg-black h-screen overflow-hidden'>
         <Sidebar />
         {/* center */}
       </main>
