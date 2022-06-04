@@ -44,6 +44,14 @@ const jwt = async ({ token, account, user }: any) => {
   return await refreshAccessToken(token);
 };
 
+export const session = async ({ session, token }: any) => {
+  session.user.accessToken = token.accessToken;
+  session.user.refreshToken = token.refreshToken;
+  session.user.username = token.username;
+
+  return session;
+};
+
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
@@ -60,5 +68,6 @@ export default NextAuth({
   },
   callbacks: {
     jwt: jwt,
+    session: session,
   },
 });
