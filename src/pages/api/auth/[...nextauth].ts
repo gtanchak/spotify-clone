@@ -64,7 +64,7 @@ export default NextAuth({
   ],
   secret: process.env.JWT_SECRET_TOKEN,
   pages: {
-    signIn: "./login",
+    signIn: "/login",
   },
   callbacks: {
     jwt: jwt,

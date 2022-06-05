@@ -15,6 +15,7 @@ interface Props {
 }
 
 const login: NextPage<Props> = ({ providers }) => {
+  console.log(providers);
   return (
     <div className='flex flex-col items-center bg-black min-h-screen w-full justify-center'>
       <img src='/spotify-logo.png' alt='logo' className='w-52 mb-5' />
