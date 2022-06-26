@@ -8,7 +8,6 @@ const Home: NextPage = () => {
       <main className='flex'>
         <Sidebar />
         <Center />
-        {/* center */}
       </main>
       <div>{/* Player */}</div>
     </div>
